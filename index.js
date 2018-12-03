@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 
-const useDebug = id => {
-  if (!id) id = ""
+const useDebug = (id = '') => {
   useEffect(() => {
     console.log(`__DEBUG_${id}__ mounted`)
 
